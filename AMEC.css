@@ -1,8 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
+    	box-sizing: border-box;
+    	font-family: 'Mulish', sans-serif;
 }
 html {
 	height: 100%;
@@ -20,7 +20,7 @@ body {
 	top: 0;
 	z-index: 1;
 	width: 100%;
-	background-image: linear-gradient(to right, rgba(255, 0, 0, 0.7) , rgba(0, 0, 255, 0.356), rgba(0, 128, 0, 0.774));;
+	background-image: linear-gradient(to right, rgba(255, 0, 0, 0.9) , rgba(0, 0, 255, 0.356), rgba(0, 128, 0, 0.774));;
 	/* height: 160px; */
 	background-size: 100%;
 }
