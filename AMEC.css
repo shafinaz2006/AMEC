@@ -20,7 +20,7 @@ body {
 	top: 0;
 	z-index: 1;
 	width: 100%;
-	background-image: linear-gradient(to right, rgba(255, 0, 0, 0.9) , rgba(0, 0, 255, 0.356), rgba(0, 128, 0, 0.774));;
+	background-image: linear-gradient(to right, rgb(255, 0, 0) , rgb(0, 0, 255), rgb(0, 255, 0,));;
 	/* height: 160px; */
 	background-size: 100%;
 }
