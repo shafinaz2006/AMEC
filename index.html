@@ -15,7 +15,7 @@
 <body>
     <header class='header'>
         <div class='header__banner'>
-            <h1 class='header__heading'> Hello from AMEC </h1>
+            <!-- <h1 class='header__heading'> Hello from AMEC </h1> -->
         </div>
         <nav class='navbar navbar-expand-md navbarStyle py-0'>
             <a class='navbar-brand ' href='#' style='color: white;'>Home</a>
@@ -97,9 +97,7 @@
         </section>
         <div class='rightBar' id='third'>
             <h3 class='heading'> Memories </h3>
-            <div class='memoryPicDiv'>
-                <img src='https://user-images.githubusercontent.com/17438558/88206220-c7a98d00-cc02-11ea-965a-09bbe954e201.jpg' alt='memoryPic' id='memoryPic'>
-            </div>
+            <img class='rightBar__image' src='https://user-images.githubusercontent.com/17438558/88206220-c7a98d00-cc02-11ea-965a-09bbe954e201.jpg' alt='memoryPic' id='memoryPic'>
             <h3 class='heading'> Upcoming events </h3>
             <ul class='rightBar__list'>
                 <li>
@@ -108,7 +106,6 @@
                     <p> <strong>Date:</strong> August 20, 2020</p>
                     <p> <strong>Time:</strong> 7.00PM - 10.00P</p>
                     <a href='#' target='_blank' class='btn btn-success btn--event-details'> <i>Details</i> </a>
-
                 </li>
                 <li>
                     <h4> AMEC lunch:</h4>
@@ -133,30 +130,15 @@
     </footer>
 
     <script>
-        // let dt = new Date();
-        // document.querySelector('#datetime').innerHTML = dt.toLocaleDateString();
-        // let headRow = document.querySelector('.headRow');
-        // let headRowHeight = getComputedStyle(headRow).height;
-        // let navbar = document.querySelector('nav');
-        // let navbarHeight = getComputedStyle(navbar).height;
-        // // console.log(headRowHeight + navbarHeight);
-        // if (parseInt(headRowHeight.replace('px', '')) > parseInt(navbarHeight.replace('px', ''))) {
-        //     // console.log(headRowHeight)
-        //     document.querySelector('.mainBody').style.marginTop = headRowHeight;
-        // } else {
-        //     // console.log(navbarHeight)
-        //     document.querySelector('.mainBody').style.marginTop = navbarHeight;
-        // }
-        // console.log(getComputedStyle(document.querySelector('.mainBody')).marginTop);
-        let imgCollection = ['https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfQS3__QKQnLJinshxLmEogv0C_irvgBdpyQ&usqp=CAU',
-            'https://user-images.githubusercontent.com/17438558/88207718-0f311880-cc05-11ea-949a-d64d2d63af99.jpg',
-            'https://user-images.githubusercontent.com/17438558/88207737-13f5cc80-cc05-11ea-9e0f-9e427ba3147f.png',
-            'https://user-images.githubusercontent.com/17438558/88207732-12c49f80-cc05-11ea-868c-51e0bb0e2bae.png'
+        let imgCollection = ['./images/Mahfuz_Sir.jpg',
+            './images/1.jpg',
+            './images/2.jpg',
+            './images/3.png',
+            './images/4.png',
         ];
         window.setInterval(() => {
             let memoryPic = document.querySelector('#memoryPic')
             let picIndex = Math.floor(Math.random() * imgCollection.length);
-            // console.log(picIndex);
             memoryPic.src = imgCollection[picIndex];
         }, 5000);
     </script>

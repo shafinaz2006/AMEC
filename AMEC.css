@@ -37,8 +37,8 @@ p {
 }
 
 body {
-    /* background-color: rgba(214, 214, 255, 0.4); */
-    background-color: whitesmoke;
+    background-color: white;
+    /* background-color: whitesmoke; */
     font-family: arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -66,7 +66,12 @@ body {
 }
 
 .header__banner {
-    background-image: linear-gradient(to right, red, blue, green);
+    /* background-image: linear-gradient(to right, red, blue, green), url('./images/logo.jpg'); */
+    background-color: rgb(19, 42, 19);
+    background-image: url('./images/logo1.jpg');
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position-x: 5%;
     height: 20vh;
     display: flex;
     flex-direction: row;
@@ -81,7 +86,8 @@ body {
 }
 
 .navbarStyle {
-    background-color: olivedrab;
+    /* background-color: olivedrab; */
+    background-color: rgb(49, 87, 44);
     color: #fffff0;
     width: 100%;
     left: 0;
@@ -162,6 +168,12 @@ body {
     align-items: center;
 }
 
+.rightBar__image {
+    width: 100%;
+    object-fit: cover;
+    height: 30vh;
+}
+
 .rightBar__list {
     width: 80%;
     margin-bottom: 3rem;
@@ -184,16 +196,15 @@ body {
 }
 
 .footer {
-    bottom: 0;
-    position: fixed;
     display: flex;
     flex-direction: column;
-    background-color: rgb(107, 142, 35);
+    /* background-color: rgb(107, 142, 35); */
+    background-color: rgba(49, 87, 44, 01);
     height: 3rem;
     width: 100%;
     justify-content: center;
-    z-index: 9999;
     align-items: center;
+    color: white;
 }
 
 .footer__text {
@@ -201,7 +212,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    /* #first {
+    #first {
         order: 1;
     }
     #second {
@@ -209,15 +220,32 @@ body {
     }
     #third {
         order: 3;
-    } */
+    }
     .header__heading {
         padding-left: 2.5rem;
+    }
+    .header__banner {
+        background-size: contain;
     }
     .navbar-brand {
         display: none;
     }
     .nav-item--home {
         display: inline;
+    }
+    .main {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .leftBar {
+        width: 20%;
+    }
+    .rightBar {
+        width: 24%;
+    }
+    .pageContent {
+        width: 47%;
     }
     .footer {
         height: 2rem;
@@ -228,4 +256,9 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
